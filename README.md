@@ -15,6 +15,8 @@ _Built with [lit-element](https://lit-element.polymer-project.org/)_
 
 For now, this component only Works on Windows 10: where the native Microsoft Store application can be launched via a protocol handler. Other stores and browsers could be supported in the future.
 
+The host app must be installed through the Microsoft Store for the okay button's deep link to the listing's ratings & reviews section to work.
+
 ## Using this component
 
 ## Install
