@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>custom protocol test</title>
+        <link rel="manifest" href="/manifest.webmanifest">
+        <script type="module" src="./build/pwa-ratings.js"></script>
+    </head>
+    <body>
+        <pwa-ratings bigid="9n0dx20hk701"></pwa-ratings>
+        <h1>My awesome web app</h1>
+        <h2>Replace the web component's bigID attribute value with yours to enable the correct ratings & reviews modal link.</h2>
+        <p>This demo uses the Microsoft Terminal one as an example. It retrieves the component's name, icon, and theme color from the web manifest.</p>
+        <div>
+            <button id="launchBtn">Click me!</button>
+        </div>
+        <script type="module">
+            let ratings = document.querySelector("pwa-ratings");
+            document.getElementById("launchBtn").onclick = function() {ratings.openPrompt()};
+            // ratings.setMinDays(1);
+            ratings.setMinLaunches(1);
+            ratings.setSecondsDelay(5);
+        </script>
+    </body>
+    <style type="text/css" media="screen">
+        pwa-ratings {
+            /* --okay-button-color : #007042;
+            --modal-background-color: pink; */
+        }
+        pwa-ratings::part(okayButton) {
+            /* background-color: tomato; */
+        }
+        h1 {
+            font-size: 150px;
+            color: purple;
+        }
+        h1, h2, p {
+            text-align: center;
+        }
+        div {
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</html>

@@ -1,0 +1,16 @@
+{
+    "short_name": "Windows Terminal",
+    "name": "Windows Terminal",
+    "icons": [
+        {
+            "src": "./assets/images/terminal-icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/?utm_source=homescreen",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#606060",
+    "background_color": "#FFFFFF"
+}
