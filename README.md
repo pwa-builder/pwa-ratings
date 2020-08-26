@@ -71,6 +71,8 @@ The example below will automatically open the prompt after the app has been prev
     ratings.setMinLaunches(1);
     ratings.setSecondsDelay(5); // optional modification to override default 10 seconds
 ```
+Try it: [live](https://pwa-ratings.glitch.me/) | [code](https://glitch.com/edit/#!/pwa-ratings?path=index.html%3A22%3A3)
+
 
 ### Do-it-yourself scheduling
 
@@ -146,4 +148,6 @@ If you need to style this component more comprehensively, you can use [Shadow Pa
       background-color: pink;
     }
 ```
+Try it: [live](https://pwa-ratings-styling-samples.glitch.me/) | [code](https://glitch.com/edit/#!/pwa-ratings-styling-samples?path=style.css%3A13%3A31)
+
 
